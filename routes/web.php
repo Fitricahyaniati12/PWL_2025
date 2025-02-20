@@ -14,12 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 /*Route::get('/hello', function () { 
-    // return view('Hello Word');
+
     return 'Hello World';
 });*/
 
-Route::get('/Welcome', function () { 
-    return 'Fitri Cahyaniati 
-            NIM 2341760198';
+Route::get('/user/{name}', function ($name) { 
+    return 'My name is '.$name;
 });
 
