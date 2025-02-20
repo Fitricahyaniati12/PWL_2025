@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+/*Route::get('/hello', function () { 
+    // return view('Hello Word');
+    return 'Hello World';
+});*/
+
+Route::get('/Welcome', function () { 
+    return 'Fitri Cahyaniati 
+            NIM 2341760198';
 });
+
