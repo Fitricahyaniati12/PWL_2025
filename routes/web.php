@@ -67,3 +67,5 @@ Route::resource('photos', PhotoController::class)->only(['index', 'show']);
 Route::get('/greeting', function () {
     return view('blog.hello', ['name' => 'Fitri Cahya']);
 });
+
+Route::get('/greeting', [WelcomeController::class, 'greeting']);
