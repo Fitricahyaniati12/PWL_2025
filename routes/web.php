@@ -65,5 +65,5 @@ Route::resource('photos', PhotoController::class)->except(['create', 'store', 'u
 Route::resource('photos', PhotoController::class)->only(['index', 'show']);
 
 Route::get('/greeting', function () {
-    return view('hello', ['name' => 'Fitri Cahyaniati']); 
+    return view('blog.hello', ['name' => 'Fitri Cahya']);
 });
